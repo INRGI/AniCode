@@ -5,7 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/login_page.css">
 </head>
 
 <body>
@@ -13,17 +16,17 @@
         <div class="login-form-container">
             <h1 class="signin">Sign In</h1>
 
-            <form action="" method="POST">
-                <label for="username">User name or email</label>
-                <input type="text" id="username" name="username" required><br><br>
+            <form class="form-decor" action="" method="POST">
+                <label class="username-label" for="username">User name</label>
+                <input class="username-input" type="text" id="username" name="username" required><br><br>
 
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required><br><br>
+                <label class="password-label" for="password">Password</label>
+                <input class="password-input" type="password" id="password" name="password" required><br><br>
 
-                <button>Sign In</button>
+                <button class="form-button-signin">Sign In</button>
             </form>
 
-            <p class="login-text">It's not registered?<a class="login-link">Create an account</a></p>
+            <p class="login-text">It's not registered?<a href="" class="login-link">Create an account</a></p>
         </div>
         <div class="login-image"></div>
     </div>

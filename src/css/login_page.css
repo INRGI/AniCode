@@ -1,0 +1,164 @@
+body{
+  margin: 0;
+}
+.login-container{
+    display: flex;
+    width: 100%;
+    height: 100VH;
+    overflow: hidden;
+    background-color: black;
+}
+.login-image{
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+    border-radius: 30px 0px 0px 30px;
+    background: rgba(211, 211, 211, 0.5) url('../img/onepm.png') 50% / cover no-repeat;
+    filter: grayscale(100%);
+}
+.login-form-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 612px;
+  margin: 44px;
+  color: #FCFCFC;
+  align-items: center;
+}
+
+.signin{
+  color: #FCFCFC;
+  font-family: Roboto;
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing:0.02em;
+  margin-bottom: 36px;
+  margin-top: 0;
+
+  width: 210px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid;
+  animation: typing 0.8s steps(8) forwards, blinking 1.5s infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 210px }
+}
+
+@keyframes blinking {
+  0% {border-right-color: transparent}
+  50% {border-right-color: rgb(255, 255, 255)}
+  100% {border-right-color: transparent}
+}
+
+.form-decor{
+  display: flex;
+  flex-direction: column;
+}
+.username-label{
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing-label 0.8s steps(9) forwards;
+  animation-delay: 0.9s;
+}
+@keyframes typing-label {
+  from { width: 0 }
+  to { width: 125px }
+}
+.username-input{
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  background: #302D2D;
+  border: none;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+
+.username-input:focus {
+  outline: 2px dashed #ad2b89;
+  outline-offset: 0.2em;
+}
+
+.password-label{
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing-label-password 0.8s steps(8) forwards;
+  animation-delay: 1.9s;
+}
+@keyframes typing-label-password {
+  from { width: 0 }
+  to { width: 115px }
+}
+.password-input{
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  background: #302D2D;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+.password-input:focus {
+  outline: 2px dashed #ad2b89;
+  outline-offset: 0.2em;
+}
+
+.form-button-signin{
+  width: 410px;
+  height: 87px;
+  border-radius: 5px;
+  border: 4px solid #BD00FF;
+  background: transparent;
+  color: #C4C4C4;
+  font-family: Roboto;
+  font-size: 30px;
+  letter-spacing: 0.02em;
+  transition: background-color 0.3s, color 0.3s;
+}
+.form-button-signin:hover {
+  background-color: #BD00FF;
+  color: #fff;
+}
+
+.form-button-signin:focus {
+  background-color: #BD00FF;
+  color: #fff;
+  outline: none;
+}
+.login-text{
+  color: #C4C4C4;
+  font-family: Roboto;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+}
+.login-link{
+  text-decoration: none;
+  margin-left: 11px;
+  color: #BD00FF;
+}
+.login-link:focus,
+.login-link:hover{
+  color: #ad2b89;
+}
+
