@@ -33,7 +33,7 @@ body{
   font-weight: 500;
   letter-spacing:0.02em;
   margin-bottom: 36px;
-  margin-top: 0;
+  margin-top: 100;
 
   width: 210px;
   overflow: hidden;
@@ -162,3 +162,90 @@ body{
   color: #ad2b89;
 }
 
+/**
+  |============================
+  | MOBILE MAX 428
+  |============================
+*/
+
+@media(max-width:428px){
+  /* .login-image{
+    display: none;
+  } */
+  .login-form-container{
+    margin: 0;
+    margin-top: 80px;
+  }
+  .login-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .login-image{
+    display: none;
+  }
+  .username-label{
+    margin-top: 25px;
+  }
+  .username-input{
+    width: 100%;
+    max-width: 320px;
+  }
+  .password-label{
+    margin-top: 25px;
+  }
+  .password-input{
+    width: 100%;
+    max-width: 320px;
+  }
+  .form-decor{
+    padding: 0;
+  }
+  .form-button-signin{
+    width: 100%;
+    margin-top: 25px;
+  }
+  .login-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .login-link{
+    margin: 0;
+  }
+}
+/**
+  |============================
+  | TABLET MAX 1024px
+  |============================
+*/
+@media( min-width: 428.1px) and (max-width:1024px){
+  .login-image{
+    display: none;
+  }
+  .login-container{
+    justify-content: center;
+    padding-top: 50px;
+    max-height:max-content;
+    padding: 0;
+  }
+  .login-form-container{
+    margin-top: 80px;
+  }
+  .password-label{
+    margin-top: 20px;
+  }
+  .username-label{
+    margin-top: 30px;
+  }
+  .form-button-signin{
+    margin-top: 30px;
+  }
+  .password-input{
+    margin-top: 10px;
+    height: 60px;
+  }
+  .username-input{
+    margin-top: 10px;
+    height: 60px;
+  }
+}
