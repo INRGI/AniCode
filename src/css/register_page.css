@@ -1,7 +1,7 @@
 body{
   margin: 0;
 }
-.login-container{
+.registration-container{
     display: flex;
     width: 100%;
     height: 100VH;
@@ -15,10 +15,10 @@ body{
     max-width: 1024px;
     height: 100%;
     border-radius: 30px 0px 0px 30px;
-    background: rgba(211, 211, 211, 0.5) url('../img/onepm.png') 50% / cover no-repeat;
+    background: rgba(211, 211, 211, 0.5) url('../img/reg-img.png') 50% / cover no-repeat;
     filter: grayscale(100%);
 }
-.login-form-container{
+.registration-form-container{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -28,7 +28,7 @@ body{
   align-items: center;
 }
 
-.signin{
+.signup{
   color: #FCFCFC;
   font-family: Roboto;
   font-size: 64px;
@@ -54,11 +54,11 @@ body{
   100% {border-right-color: transparent}
 }
 
-.form-decor{
+.registration-form{
   display: flex;
   flex-direction: column;
 }
-.username-label{
+.registration-label-username{
   font-family: Roboto;
   font-size: 24px;
   font-weight: 400;
@@ -76,7 +76,7 @@ body{
   from { width: 0 }
   to { width: 125px }
 }
-.username-input{
+.reg-name{
   width: 400px;
   height: 50px;
   border-radius: 5px;
@@ -85,20 +85,22 @@ body{
   text-align: center;
   color: white;
   font-size: 22px;
+  margin-top: 10px;
 }
 
-.username-input:focus {
+.reg-name:focus {
   outline: 2px dashed #ad2b89;
   outline-offset: 0.2em;
 }
 
-.password-label{
+.registration-label-password{
   font-family: Roboto;
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 0.02em;
   margin-bottom: 10px;
   margin-left: 10px;
+  margin-top: 10px;
 
   width: 0;
   overflow: hidden;
@@ -110,7 +112,7 @@ body{
   from { width: 0 }
   to { width: 115px }
 }
-.password-input{
+.reg-password{
   width: 400px;
   height: 50px;
   border-radius: 5px;
@@ -120,13 +122,14 @@ body{
   text-align: center;
   color: white;
   font-size: 22px;
+  margin-top: 10px;
 }
-.password-input:focus {
+.reg-password:focus {
   outline: 2px dashed #ad2b89;
   outline-offset: 0.2em;
 }
 
-.form-button-signin{
+.form-button-signup{
   width: 410px;
   height: 87px;
   border-radius: 5px;
@@ -137,31 +140,17 @@ body{
   font-size: 30px;
   letter-spacing: 0.02em;
   transition: background-color 0.3s, color 0.3s;
+  margin-top: 35px;
 }
-.form-button-signin:hover {
+.form-button-signup:hover {
   background-color: #BD00FF;
   color: #fff;
 }
 
-.form-button-signin:focus {
+.form-button-signup:focus {
   background-color: #BD00FF;
   color: #fff;
   outline: none;
-}
-.login-text{
-  color: #C4C4C4;
-  font-family: Roboto;
-  font-size: 24px;
-  letter-spacing: 0.02em;
-}
-.login-link{
-  text-decoration: none;
-  margin-left: 11px;
-  color: #BD00FF;
-}
-.login-link:focus,
-.login-link:hover{
-  color: #ad2b89;
 }
 
 /**
@@ -171,48 +160,37 @@ body{
 */
 
 @media(max-width:428px){
-  /* .login-image{
-    display: none;
-  } */
-  .login-form-container{
+  .registration-form-container{
     margin: 0;
     margin-top: 80px;
   }
-  .login-container{
+  .registration-container{
     flex-direction: column;
     gap: 20px;
   }
   .login-image{
     display: none;
   }
-  .username-label{
+  .registration-label-username{
     margin-top: 25px;
   }
-  .username-input{
+  .reg-name{
     width: 100%;
     max-width: 320px;
   }
-  .password-label{
+  .registration-label-password{
     margin-top: 25px;
   }
-  .password-input{
+  .reg-password{
     width: 100%;
     max-width: 320px;
   }
-  .form-decor{
+  .registation-form{
     padding: 0;
   }
-  .form-button-signin{
+  .form-button-signup{
     width: 100%;
     margin-top: 25px;
-  }
-  .login-text{
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-  }
-  .login-link{
-    margin: 0;
   }
 }
 /**
@@ -224,31 +202,30 @@ body{
   .login-image{
     display: none;
   }
-  .login-container{
+  .registration-container{
     justify-content: center;
     padding-top: 50px;
     max-height:max-content;
     padding: 0;
   }
-  .login-form-container{
+  .registration-form-container{
     margin-top: 80px;
   }
-  .password-label{
+  .registration-label-password{
     margin-top: 20px;
   }
-  .username-label{
+  .registration-label-username{
     margin-top: 30px;
   }
-  .form-button-signin{
+  .form-button-signup{
     margin-top: 30px;
   }
-  .password-input{
+  .reg-password{
     margin-top: 10px;
     height: 60px;
   }
-  .username-input{
+  .reg-name{
     margin-top: 10px;
     height: 60px;
   }
 }
-

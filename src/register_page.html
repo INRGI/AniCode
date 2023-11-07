@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/register_page.css">
+</head>
+
+<body>
+    <div class="registration-container">
+        <div class="registration-form-container">
+            <h1 class="signup">Sign Up</h1>
+
+            <form class="registration-form" action="" method="post">
+                <label class="registration-label-username" for="name">User name</label>
+                <input class="reg-name" type="text" id="name" name="name" required>
+
+                <label class="registration-label-password" for="password">Password</label>
+                <input class="reg-password" type="password" id="password" name="password" required>
+
+                <label class="registration-label-password" for="confirm_password">Confirm password</label>
+                <input class="reg-password" type="password" id="confirm_password" name="confirm_password" required>
+
+                <button class="form-button-signup">Sign Up</button>
+            </form>
+
+        </div>
+        <div class="login-image"></div>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
