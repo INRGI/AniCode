@@ -1,0 +1,30 @@
+.header-container{
+    display: flex;
+    align-items: center;
+    height: 52px;
+}
+ul,
+ul li {
+  list-style: none;
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.header-list{
+    display: flex;
+}
+.svg-header{
+    width: 35px;
+height: 45.5px;
+}
+.logo-header{
+    display: flex;
+    align-items: center;
+}
