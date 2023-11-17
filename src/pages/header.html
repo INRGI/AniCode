@@ -37,7 +37,30 @@
             <button class="header-button-signup">Sign Up</button>
             <button class="header-button-signin">Sign In</button>
         </div>
+        <button class="menu-toggle js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
+            <svg class="icon-header-menu" width="32" height="22">
+                <use href="../img/icons.svg#icon-menu-burger"></use>
+            </svg>
+        </button>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="modal-icon icon">
+                <use href="../img/icons.svg#icon-close-button"></use>
+            </svg>
+        </button>
+        <div class="mobile-container">
+            <ul class="list mobile-menu">
+                <li><a href="" class="link-mobile-menu">News</a></li>
+                <li><a href="" class="link-mobile-menu">Categories</a></li>
+            </ul>
+            <div class="menu-buttons">
+                <button class="header-menu-signup">Sign Up</button>
+                <button class="header-menu-signin">Sign In</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../js/mobile-menu.js"></script>
 </body>
 
 </html>
